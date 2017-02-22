@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VsProjectGrader>
+    <Parts>
+        <Part PartId="1" Name="Organic Air" Price="1.00" >
+            <Spoilage SpoilageId="1" PartId="1" SpoilageDate="2017-05-05" Quantity="1" UnitCost=".77" />
+        </Part>
+        <Part PartId="2" Name="Blue Milk" Price="3.99" />
+        <Part PartId="3" Name="George Forman USB iGrill" Price="29.95" />
+        <Part PartId="4" Name="Google gBall" Price="49.99" />
+        <Part PartId="5" Name="Squeez Bacon" Price="5.59" >
+            <Spoilage SpoilageId="2" PartId="5" SpoilageDate="2017-05-14" Quantity="2" UnitCost="4.48" />
+            <Spoilage SpoilageId="3" PartId="5" SpoilageDate="2017-05-21" Quantity="1" UnitCost="4.38" />
+        </Part>
+    </Parts>
+    <Customers>
+        <Customer CustomerId="1" FirstName="James" LastName="River" City="Richmond" State="VA" >
+            <SalesOrder SalesOrderNumber="1" OrderDate="2017-04-01" >
+                <SalesOrderPart SalesOrderPartId="1" PartId="1" Quantity="1" UnitCost=".79" UnitPrice=".99" />
+                <SalesOrderPart SalesOrderPartId="2" PartId="2" Quantity="2" UnitCost="3.37" UnitPrice="4.19" />
+                <Shipment ShipmentId="1" ShipmentDate="2017-04-04" >
+                    <ShipmentPart ShipmentPartId="37" SalesOrderPartId="1" Quantity="1" >
+                        <SalesReturn SalesReturnId="1" ShipmentPartId="37" Reason="Didn't like it" ReturnDate="2017-04-30" />
+                    </ShipmentPart>
+                    <ShipmentPart ShipmentPartId="2" SalesOrderPartId="2" Quantity="1" />
+                </Shipment>
+            </SalesOrder>
+            <SalesOrder SalesOrderNumber="2" OrderDate="2017-05-01" >
+                <SalesOrderPart SalesOrderPartId="3" PartId="1" Quantity="1" UnitCost=".79" UnitPrice=".99" />
+                <SalesOrderPart SalesOrderPartId="4" PartId="2" Quantity="2" UnitCost="3.37"  UnitPrice="3.95" />
+                <Shipment ShipmentId="2" ShipmentDate="2017-05-04" >
+                    <ShipmentPart ShipmentPartId="38" SalesOrderPartId="3" Quantity="1" />
+                </Shipment>
+                <Shipment ShipmentId="3" ShipmentDate="2017-05-14" >
+                    <ShipmentPart ShipmentPartId="39" SalesOrderPartId="4" Quantity="2" />
+                </Shipment>
+            </SalesOrder>
+        </Customer>
+        <Customer CustomerId="2" FirstName="Hugh" LastName="Gaknot" City="Bon Air" State="VA" >
+            <SalesOrder SalesOrderNumber="3" OrderDate="2017-05-11" >
+                <SalesOrderPart SalesOrderPartId="5" PartId="4" Quantity="2" UnitCost="37.79" UnitPrice="49.95"/>
+                <SalesOrderPart SalesOrderPartId="6" PartId="5" Quantity="4" UnitCost="4.37" UnitPrice="5.79" />
+                <Shipment ShipmentId="4" ShipmentDate="2017-05-14" >
+                    <ShipmentPart ShipmentPartId="40" SalesOrderPartId="5" Quantity="1" />
+                    <ShipmentPart ShipmentPartId="41" SalesOrderPartId="6" Quantity="4" />
+                </Shipment>
+                <Shipment ShipmentId="5" ShipmentDate="2017-05-21" >
+                    <ShipmentPart ShipmentPartId="42" SalesOrderPartId="5" Quantity="2" >
+                        <SalesReturn SalesReturnId="2" ShipmentPartId="6" Reason="She said it was nasty" ReturnDate="2017-05-23" />
+                    </ShipmentPart>
+                </Shipment>
+            </SalesOrder>
+        </Customer>
+        <Customer CustomerId="3" FirstName="Chester" LastName="Field" City="Chesterfield" State="VA" >
+            <SalesOrder SalesOrderNumber="4" OrderDate="2017-05-11" >
+                <SalesOrderPart SalesOrderPartId="7" PartId="2" Quantity="1" UnitCost="3.47" UnitPrice="3.99" />
+                <SalesOrderPart SalesOrderPartId="8" PartId="3" Quantity="1" UnitCost="21.17" UnitPrice="29.95" />
+                <Shipment ShipmentId="6" ShipmentDate="2017-05-14" >
+                    <ShipmentPart ShipmentPartId="43" SalesOrderPartId="7" Quantity="1" />
+                </Shipment>
+                <Shipment ShipmentId="7" ShipmentDate="2017-05-16" >
+                    <ShipmentPart ShipmentPartId="44" SalesOrderPartId="8" Quantity="1" />
+                </Shipment>
+            </SalesOrder>
+        </Customer>
+        <Customer CustomerId="4" FirstName="Skip" LastName="Wythe" City="Short Pump" State="VA" >
+            <SalesOrder SalesOrderNumber="5" OrderDate="2017-05-11" >
+                <SalesOrderPart SalesOrderPartId="9" PartId="2" Quantity="5" UnitCost="3.42" UnitPrice="4.19" />
+                <SalesOrderPart SalesOrderPartId="10" PartId="3" Quantity="1" UnitCost="21.27" UnitPrice="31.95" />
+                <Shipment ShipmentId="8" ShipmentDate="2017-05-12" >
+                    <ShipmentPart ShipmentPartId="45" SalesOrderPartId="9" Quantity="5" />
+                    <ShipmentPart ShipmentPartId="46" SalesOrderPartId="10" Quantity="1" />
+                </Shipment>
+            </SalesOrder>
+        </Customer>
+        <Customer CustomerId="5" FirstName="Chip" LastName="Enham" City="Richmond" State="VA" >
+            <SalesOrder SalesOrderNumber="6" OrderDate="2017-05-11" >
+                <SalesOrderPart SalesOrderPartId="11" PartId="3" Quantity="2" UnitCost="23.40" UnitPrice="33.95" />
+                <SalesOrderPart SalesOrderPartId="12" PartId="5" Quantity="3" UnitCost="4.27" UnitPrice="5.99" />
+                <Shipment ShipmentId="9" ShipmentDate="2017-05-12" >
+                    <ShipmentPart ShipmentPartId="47" SalesOrderPartId="11" Quantity="2" />
+                    <ShipmentPart ShipmentPartId="48" SalesOrderPartId="12" Quantity="2" />
+                </Shipment>
+            </SalesOrder>
+        </Customer>
+        <Customer CustomerId="6" FirstName="Glen" LastName="Syde" City="Glen Allen" State="VA" />
+    </Customers>
+    <Vendors>
+        <Vendor VendorId="1" Name="Star Dust">
+            <PurchaseOrder PurchaseOrderNumber="1" PoDate="2017-02-05">
+                <PurchaseOrderPart PoPartId="1" PartId="1" Quantity="10" UnitCost=".7">
+                    <Receipt ReceiptId="4" ReceiptDate="2017-02-07" Quantity="7" TotalCost=".49" ShippingAndHandling=".7" />
+                    <Receipt ReceiptId="5" ReceiptDate="2017-02-09" Quantity="3" TotalCost=".21" ShippingAndHandling="0" />
+                </PurchaseOrderPart>
+                <PurchaseOrderPart PoPartId="2" PartId="2" Quantity="12" UnitCost="3.7">
+                    <Receipt ReceiptId="6" ReceiptDate="2017-02-07" Quantity="12" TotalCost="39" ShippingAndHandling="1.7" />
+                </PurchaseOrderPart>
+                <PurchaseOrderPart PoPartId="3" PartId="3" Quantity="10" UnitCost="23.70">
+                    <Receipt ReceiptId="7" ReceiptDate="2017-02-07" Quantity="10" TotalCost="237" ShippingAndHandling="5.5" />
+                </PurchaseOrderPart>
+                <PurchaseOrderPart PoPartId="4" PartId="4" Quantity="10" UnitCost="37.70">
+                    <Receipt ReceiptId="8" ReceiptDate="2017-02-07" Quantity="10" TotalCost="377" ShippingAndHandling="7.5" />
+                </PurchaseOrderPart>
+                <PurchaseOrderPart PoPartId="5" PartId="5" Quantity="20" UnitCost="3.70">
+                    <Receipt ReceiptId="9" ReceiptDate="2017-02-07" Quantity="10" TotalCost="370" ShippingAndHandling="7.5" />
+                    <Receipt ReceiptId="10" ReceiptDate="2017-02-10" Quantity="10" TotalCost="370" ShippingAndHandling="0" />
+                </PurchaseOrderPart>
+            </PurchaseOrder>
+            <PurchaseOrder PurchaseOrderNumber="2" PoDate="2017-03-01">
+                <PurchaseOrderPart PoPartId="6" PartId="1" Quantity="20" UnitCost=".7">
+                    <Receipt ReceiptId="11" ReceiptDate="2017-03-07" Quantity="17" TotalCost=".49" ShippingAndHandling=".7" />
+                    <Receipt ReceiptId="12" ReceiptDate="2017-03-09" Quantity="3" TotalCost=".21" ShippingAndHandling="0" />
+                </PurchaseOrderPart>
+                <PurchaseOrderPart PoPartId="7" PartId="2" Quantity="5" UnitCost="3.7">
+                    <Receipt ReceiptId="13" ReceiptDate="2017-03-07" Quantity="5" TotalCost="39" ShippingAndHandling="1.7" />
+                </PurchaseOrderPart>
+                <PurchaseOrderPart PoPartId="8" PartId="3" Quantity="12" UnitCost="23.70">
+                    <Receipt ReceiptId="14" ReceiptDate="2017-03-07" Quantity="10" TotalCost="237" ShippingAndHandling="5.5" />
+                </PurchaseOrderPart>
+                <PurchaseOrderPart PoPartId="9" PartId="4" Quantity="1" UnitCost="37.70">
+                    <Receipt ReceiptId="15" ReceiptDate="2017-03-07" Quantity="1" TotalCost="37.7" ShippingAndHandling="7.5" />
+                </PurchaseOrderPart>
+                <PurchaseOrderPart PoPartId="10" PartId="5" Quantity="10" UnitCost="3.70">
+                    <Receipt ReceiptId="16" ReceiptDate="2017-03-07" Quantity="5" TotalCost="185" ShippingAndHandling="7.5" />
+                    <Receipt ReceiptId="17" ReceiptDate="2017-03-10" Quantity="5" TotalCost="185" ShippingAndHandling="0" />
+                </PurchaseOrderPart>
+            </PurchaseOrder>
+            <PurchaseOrder PurchaseOrderNumber="3" PoDate="2017-04-01">
+                <PurchaseOrderPart PoPartId="11" PartId="3" Quantity="12" UnitCost="23.70">
+                    <Receipt ReceiptId="18" ReceiptDate="2017-04-07" Quantity="10" TotalCost="237" ShippingAndHandling="5.5" />
+                </PurchaseOrderPart>
+                <PurchaseOrderPart PoPartId="12" PartId="4" Quantity="1" UnitCost="37.70">
+                    <Receipt ReceiptId="19" ReceiptDate="2017-04-07" Quantity="1" TotalCost="37.7" ShippingAndHandling="7.5" />
+                </PurchaseOrderPart>
+            </PurchaseOrder>
+        </Vendor>
+        <Vendor VendorId="2" Name="Gold Dust">
+            <PurchaseOrder PurchaseOrderNumber="4" PoDate="2017-04-01">
+                <PurchaseOrderPart PoPartId="13" PartId="1" Quantity="20" UnitCost=".7">
+                    <Receipt ReceiptId="20" ReceiptDate="2017-04-07" Quantity="17" TotalCost="1.19" ShippingAndHandling=".7" />
+                    <Receipt ReceiptId="21" ReceiptDate="2017-04-09" Quantity="3" TotalCost=".21" ShippingAndHandling="0" />
+                </PurchaseOrderPart>
+                <PurchaseOrderPart PoPartId="14" PartId="2" Quantity="5" UnitCost="3.7">
+                    <Receipt ReceiptId="22" ReceiptDate="2017-04-07" Quantity="5" TotalCost="39" ShippingAndHandling="1.7" />
+                </PurchaseOrderPart>
+                <PurchaseOrderPart PoPartId="15" PartId="3" Quantity="12" UnitCost="23.70">
+                    <Receipt ReceiptId="23" ReceiptDate="2017-04-07" Quantity="10" TotalCost="237" ShippingAndHandling="5.5" />
+                </PurchaseOrderPart>
+                <PurchaseOrderPart PoPartId="16" PartId="4" Quantity="1" UnitCost="37.70">
+                    <Receipt ReceiptId="24" ReceiptDate="2017-04-07" Quantity="1" TotalCost="37.7" ShippingAndHandling="7.5" />
+                </PurchaseOrderPart>
+                <PurchaseOrderPart PoPartId="17" PartId="5" Quantity="10" UnitCost="3.70">
+                    <Receipt ReceiptId="25" ReceiptDate="2017-04-07" Quantity="5" TotalCost="185" ShippingAndHandling="7.5" />
+                    <Receipt ReceiptId="26" ReceiptDate="2017-04-10" Quantity="5" TotalCost="185" ShippingAndHandling="0" />
+                </PurchaseOrderPart>
+            </PurchaseOrder>
+            <PurchaseOrder PurchaseOrderNumber="5" PoDate="2017-05-01">
+                <PurchaseOrderPart PoPartId="18" PartId="3" Quantity="12" UnitCost="23.70">
+                    <Receipt ReceiptId="27" ReceiptDate="2017-05-05" Quantity="10" TotalCost="237" ShippingAndHandling="5.5" />
+                </PurchaseOrderPart>
+                <PurchaseOrderPart PoPartId="19" PartId="4" Quantity="1" UnitCost="38.80">
+                    <Receipt ReceiptId="28" ReceiptDate="2017-05-05" Quantity="1" TotalCost="38.80" ShippingAndHandling="7.5" />
+                </PurchaseOrderPart>
+            </PurchaseOrder>
+        </Vendor>
+        <Vendor VendorId="3" Name="Saw Dust">
+            <PurchaseOrder PurchaseOrderNumber="6" PoDate="2017-05-21">
+                <PurchaseOrderPart PoPartId="19" PartId="3" Quantity="12" UnitCost="23.70">
+                    <Receipt ReceiptId="29" ReceiptDate="2017-05-25" Quantity="10" TotalCost="237" ShippingAndHandling="5.5" />
+                </PurchaseOrderPart>
+                <PurchaseOrderPart PoPartId="20" PartId="4" Quantity="1" UnitCost="38.80">
+                    <Receipt ReceiptId="30" ReceiptDate="2017-05-25" Quantity="1" TotalCost="38.80" ShippingAndHandling="7.5" />
+                </PurchaseOrderPart>
+            </PurchaseOrder>
+            <PurchaseOrder PurchaseOrderNumber="7" PoDate="2017-07-28">
+                <PurchaseOrderPart PoPartId="21" PartId="3" Quantity="12" UnitCost="23.70">
+                    <Receipt ReceiptId="31" ReceiptDate="2017-07-31" Quantity="10" TotalCost="237" ShippingAndHandling="5.5" />
+                    <Receipt ReceiptId="32" ReceiptDate="2017-08-03" Quantity="2" TotalCost="45.40" ShippingAndHandling="0" />
+                </PurchaseOrderPart>
+            </PurchaseOrder>
+        </Vendor>
+        <Vendor VendorId="4" Name="Moon Dust">
+            <PurchaseOrder PurchaseOrderNumber="8" PoDate="2017-08-05">
+                <PurchaseOrderPart PoPartId="22" PartId="1" Quantity="10" UnitCost=".7">
+                    <Receipt ReceiptId="33" ReceiptDate="2017-08-07" Quantity="7" TotalCost=".49" ShippingAndHandling=".7" />
+                    <Receipt ReceiptId="34" ReceiptDate="2017-08-09" Quantity="3" TotalCost=".21" ShippingAndHandling="0" />
+                </PurchaseOrderPart>
+            </PurchaseOrder>
+        </Vendor>
+        <Vendor VendorId="5" Name="Cosmic Dust">
+            <PurchaseOrder PurchaseOrderNumber="9" PoDate="2017-08-05">
+                <PurchaseOrderPart PoPartId="5" PartId="5" Quantity="20" UnitCost="3.70">
+                    <Receipt ReceiptId="35" ReceiptDate="2017-08-07" Quantity="10" TotalCost="370" ShippingAndHandling="7.5" />
+                    <Receipt ReceiptId="36" ReceiptDate="2017-08-10" Quantity="10" TotalCost="370" ShippingAndHandling="0" />
+                </PurchaseOrderPart>
+            </PurchaseOrder>
+        </Vendor>
+    </Vendors>
+
+    <!--<Hourlys>
+        <Hourly EmpID="101" FirstName="James" LastName="River" Rate="12.50" >
+            <PayCheck Hours="40" PayDate="2011/08/01" />
+            <PayCheck Hours="50" PayDate="2011/08/15" />
+            <PayCheck Hours="30" PayDate="2011/09/01" />
+            <PayCheck Hours="40.5" PayDate="2011/09/15" Rate="12.75" />
+        </Hourly>
+        <Hourly EmpID="102" FirstName="Chip" LastName="Enham" Rate="12.75" >
+            <PayCheck EmpID="102" Hours="44" PayDate="2011/08/01" />
+            <PayCheck EmpID="102" Hours="39.5" PayDate="2011/08/15" />
+            <PayCheck EmpID="102" Hours="44.5" PayDate="2011/09/01" Rate="12.77" />
+            <PayCheck EmpID="102" Hours="40.5" PayDate="2011/09/15" />
+        </Hourly>
+        <Hourly EmpID="103" FirstName="Hugh" LastName="Gaknot" Rate="13.33" >
+            <PayCheck EmpID="103" Hours="40.25" PayDate="2011/08/01" />
+            <PayCheck EmpID="103" Hours="39.5" PayDate="2011/08/15" />
+            <PayCheck EmpID="103" Hours="48.5" PayDate="2011/09/01" Rate="13.77" />
+            <PayCheck EmpID="103" Hours="50.5" PayDate="2011/09/15" />
+        </Hourly>
+    </Hourlys>
+    <SalesPeople>
+        <Sales EmpID="201" FirstName="Maggie" LastName="Walker" CommissionRate=".105" >
+            <PayCheck EmpID="201" SalesThisPeriod="10000" PayDate="2011/08/01" />
+            <PayCheck EmpID="201" SalesThisPeriod="20000" PayDate="2011/08/15" CommissionRate=".115"/>
+            <PayCheck EmpID="201" SalesThisPeriod="30000" PayDate="2011/09/01" CommissionRate=".125"/>
+            <PayCheck EmpID="201" SalesThisPeriod="40000" PayDate="2011/09/15" CommissionRate=".150"/>
+        </Sales>
+        <Sales EmpID="202" FirstName="Glen" LastName="Syde" CommissionRate=".125" >
+            <PayCheck EmpID="202" SalesThisPeriod="44000" PayDate="2011/08/01" />
+            <PayCheck EmpID="202" SalesThisPeriod="33000" PayDate="2011/08/15" CommissionRate=".155"/>
+            <PayCheck EmpID="202" SalesThisPeriod="22000" PayDate="2011/09/01" CommissionRate=".115"/>
+            <PayCheck EmpID="202" SalesThisPeriod="15000" PayDate="2011/09/15" CommissionRate=".105"/>
+        </Sales>
+        <Sales EmpID="203" FirstName="Bo" LastName="Jangles" CommissionRate=".133" >
+            <PayCheck EmpID="203" SalesThisPeriod="44000" PayDate="2011/08/01" />
+            <PayCheck EmpID="203" SalesThisPeriod="43000" PayDate="2011/08/15" CommissionRate=".134"/>
+            <PayCheck EmpID="203" SalesThisPeriod="25000" PayDate="2011/09/01" CommissionRate=".122"/>
+            <PayCheck EmpID="203" SalesThisPeriod="33000" PayDate="2011/09/15" CommissionRate=".111"/>
+        </Sales>
+    </SalesPeople>
+    <Salaries>
+        <Salary EmpID="301" FirstName="Forest" LastName="Hill" Salary="48480">
+            <PayCheck EmpID="301" PayDate="2011/08/01" />
+            <PayCheck EmpID="301" PayDate="2011/08/15" Salary="50172" />
+            <PayCheck EmpID="301" PayDate="2011/09/01" />
+            <PayCheck EmpID="301" PayDate="2011/09/15" />
+        </Salary>
+        <Salary EmpID="302" FirstName="Annabelle" LastName="Lee" Salary="58880">
+            <PayCheck EmpID="302" PayDate="2011/08/01" />
+            <PayCheck EmpID="302" PayDate="2011/08/15" />
+            <PayCheck EmpID="302" PayDate="2011/09/01" Salary="61200" />
+            <PayCheck EmpID="302" PayDate="2011/09/15" />
+        </Salary>
+        <Salary EmpID="303" FirstName="Chester" LastName="Field" Salary="39720">
+            <PayCheck EmpID="303" PayDate="2011/08/01" Salary="41200" />
+            <PayCheck EmpID="303" PayDate="2011/08/15" />
+            <PayCheck EmpID="303" PayDate="2011/09/01" />
+            <PayCheck EmpID="303" PayDate="2011/09/15" />
+        </Salary>
+    </Salaries>-->
+</VsProjectGrader>

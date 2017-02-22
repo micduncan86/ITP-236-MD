@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ProjectGrader>
+  <Name>ITP-236 LINQ Sales Project</Name>
+  <Topics>
+    <Topic Name="Sales Linq" >
+      <Constants>
+        <Test Name="StudentName" DataType="String" Value="5" />
+      </Constants>
+      <Methods>
+        <Test Name="GetCustomersWithOrders" DataType="List`1" Value="20" Method="TestGetCustomersWithOrders" >
+          <Parameters>
+            <!--<Parameter Name="PayDate" DataType="DateTime" />-->
+          </Parameters>
+        </Test>
+        <Test Name="GetCustomerForLargestSale" DataType="Customer" Value="20" Method="TestGetCustomerForLargestSale" />
+        <Test Name="GetCustomersByOrderSizeDescending" DataType="List`1" Value="20" Method="TestGetCustomersByOrderSizeDescending" />
+        <Test Name="GetAllPartsByVendorJoin" DataType="List`1" Value="20" Method="TestGetAllPartsByVendorJoin" >
+          <Parameters>
+            <Parameter Name="VendorId" DataType="Int32" />
+          </Parameters>
+        </Test>
+        <Test Name="GetSalesByVendorUsingGroup" DataType="List`1" Value="20" Method="TestGetSalesByVendorUsingGroup" />
+        <Test Name="GetAllPartsThatDoNotHaveSpoilages" DataType="List`1" Value="20" Method="TestGetAllPartsThatDoNotHaveSpoilages" />
+        <Test Name="GetPartWithHighestValue" DataType="Part" Value="20" Method="TestGetPartWithHighestValue" />
+        <Test Name="GetPartDictionary" DataType="Dictionary`2" Value="20" Method="TestGetPartDictionary" />
+        <Test Name="GetDistinctPartsInPurchaseOrderParts" DataType="List`1" Value="20" Method="TestGetDistinctPartsInPurchaseOrderParts" />
+      </Methods>
+    </Topic>
+  </Topics>
+</ProjectGrader>
