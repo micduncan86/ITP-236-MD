@@ -28,7 +28,17 @@ namespace LinqSalesStudent
         /// <summary>
         /// LargestSale is the largest sale for the Customer based on OrderTotal
         /// </summary>
-        public SalesOrder LargestSale => new SalesOrder();
+        public SalesOrder LargestSale
+        {
+            get {
+                return (from so in SalesOrders
+                        orderby so.OrderTotal descending
+                        select so).FirstOrDefault();
+                //return new SalesOrder();
+            }
+
+        }
+        
         /// <summary>
         /// Returns a collection (List) of the items that a Customer has purchased, with the total quantities
         /// Group the SalesOrderParts from the SalesOrders. Group by the Part's PartId and Name
