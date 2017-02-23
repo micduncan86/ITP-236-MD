@@ -1322,7 +1322,7 @@ namespace LinqSalesGrader2
         }
         public void VendorItemsSold(Vendor vendor, Test test)
         {
-            var student = vendor.TotalPurchases;
+            var student = vendor.ItemsSold;
             var result = new LinqSalesProjectGraderAnswer.Vendor(vendor);
 
             var answer = result.ItemsSold;
